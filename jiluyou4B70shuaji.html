@@ -274,6 +274,7 @@ opkg_install_cmd: Cannot install package luci-i18n-base-zh-cn.
 </code></pre>
 <p>当提示出现 “Configuring luci-i18n-base-zh-cn.”表示安装成功。<br><img src="https://s2.ax1x.com/2020/02/26/3Uyh01.png" srcset="/img/loading.gif" alt="3Uyh01.png"></p>
 <p>然后在浏览器输入 192.168.1.1 就可以看到中文界面。<br>至此，我们已经全部搞定！</p>
+<p><img src="https://s2.ax1x.com/2020/02/26/3UI1JA.jpg" srcset="/img/loading.gif" alt="3UI1JA.jpg"></p>
 <h1 id="如何恢复到官方固件"><a href="#如何恢复到官方固件" class="headerlink" title="如何恢复到官方固件"></a>如何恢复到官方固件</h1><p>路由器抜电，长按复位键，不要松开，插上电源，等10秒再松开。<br>浏览器进入192.168.1.1 pb-boot界面<br>刷入之前备份的文件（用winscp工具下载到本地硬盘的firmware.bin（32M左右）官方固件（包含拨号信息等数据））<br>恢复固件完成后就会完全回到刷机前的固件，包含拨号信息等配置数据。</p>
 <h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>可能有的人会出现网页很卡，一个网页半天打不开的情况。这是因为mac地址重写的缘故。<br>需要把MAC地址还原为之前我们备份的MAC地址。</p>
 <p>ssh连接路由器，或者在控制台下输入写入mac命令，具体MAC以刷机前备份的MAC为准。<br>然后逐个输入命令：<br>注意：<strong>下面只是示例，一定要把MAC地址改成你自己的再运行命令!!!!</strong></p>
@@ -286,6 +287,7 @@ reboot   #命令说明：重启路由器。
 </code></pre>
 <p>然后速度就会恢复正常。</p>
 <p><img src="https://s2.ax1x.com/2020/02/26/3UgU6e.png" srcset="/img/loading.gif" alt="3UgU6e.png"><br><img src="https://s2.ax1x.com/2020/02/26/3UgNlD.png" srcset="/img/loading.gif" alt="3UgNlD.png"></p>
+<p>··<br><img src="https://s2.ax1x.com/2020/02/26/3UIAR1.jpg" srcset="/img/loading.gif" alt="3UIAR1.jpg"></p>
 
             <hr>
           </div>
