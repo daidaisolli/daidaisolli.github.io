@@ -140,7 +140,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    2k 字
+                    2.1k 字
                   </span>&nbsp;
                 
 
@@ -148,7 +148,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      7 分钟
+                      8 分钟
                   </span>&nbsp;
                 
 
@@ -280,6 +280,7 @@ opkg_install_cmd: Cannot install package luci-i18n-base-zh-cn.
 <p>然后在浏览器输入 192.168.1.1 就可以看到中文界面。<br>至此，我们已经全部搞定！</p>
 <p><img src="https://cdn.jsdelivr.net/gh/daidaisolli/img/BLOGPIC/20200227004310.png" srcset="/img/loading.gif" alt=""><br><img src="https://cdn.jsdelivr.net/gh/daidaisolli/img/BLOGPIC/20200227004332.png" srcset="/img/loading.gif" alt=""><br><img src="https://cdn.jsdelivr.net/gh/daidaisolli/img/BLOGPIC/20200227004229.png" srcset="/img/loading.gif" alt=""></p>
 <h1 id="如何恢复到官方固件"><a href="#如何恢复到官方固件" class="headerlink" title="如何恢复到官方固件"></a>如何恢复到官方固件</h1><p>路由器抜电，长按复位键，不要松开，插上电源，等10秒再松开。<br>浏览器进入192.168.1.1 pb-boot界面<br>刷入之前备份的文件（用winscp工具下载到本地硬盘的firmware.bin（32M左右）官方固件（包含拨号信息等数据））<br>恢复固件完成后就会完全回到刷机前的固件，包含拨号信息等配置数据。</p>
+<p><strong>2020.2.27 Update</strong><br><strong>恢复官版之前一定要把之前备份的MAC地址重新写入设备，不然进不去插件中心，无法打开开发者模式，进不去SHH，变成半砖！！！！（正常用没问题）</strong></p>
 <h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>可能有的人会出现网页很卡，一个网页半天打不开的情况。这是因为mac地址重写的缘故。<br>需要把MAC地址还原为之前我们备份的MAC地址。</p>
 <p>ssh连接路由器，或者在控制台下输入写入mac命令，具体MAC以刷机前备份的MAC为准。<br>然后逐个输入命令：<br>注意：<strong>下面只是示例，一定要把MAC地址改成你自己的再运行命令!!!!</strong></p>
 <pre><code class="lang-css">lan_eeprom_mac D4:EE:07:52:34:22    #命令说明：写入LAN MAC。
