@@ -70,7 +70,7 @@
     <link href="/hello-world.html"/>
     <url>/hello-world.html</url>
     
-    <content type="html"><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>We are meeting again. This is the nth blog. I believe there will be another one!</p><h2 id="你好，世界"><a href="#你好，世界" class="headerlink" title="你好，世界"></a>你好，世界</h2><p>我们又开始见面啦，这是第N个博客，相信还会有下一个！</p>]]></content>
+    <content type="html"><![CDATA[<p><link rel="stylesheet" href="APlayer.min.css"></p><p><div id="aplayer"></div></p><script src="APlayer.min.js"></script><h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>We are meeting again. This is the nth blog. I believe there will be another one!</p><h2 id="你好，世界"><a href="#你好，世界" class="headerlink" title="你好，世界"></a>你好，世界</h2><p>我们又开始见面啦，这是第N个博客，相信还会有下一个！</p>]]></content>
     
     
     
